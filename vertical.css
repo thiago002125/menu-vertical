@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+}
+/* titulo */
+.title{
+	display: inline-block;
+	color: white;
+}
+.logo{
+	display: inline-block;
+	vertical-align: top;
+}
+.cab{
+	text-align: center;
+	background-color: #1B365D;
+	height: 60px;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+/* sidebar */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+li a{
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a.ativo1 {
+	background-color: #1B365D;
+	color: white;
+}
+li a:hover:not(.ativo1) {
+	background-color: #555;
+	color: white;
+}
+main, footer{
+	margin-left:20%;
+	padding:1px 16px;
+}
+/* lista suspensa */
+.dropbot{
+	text-align: left;
+	padding-right: 1000px;
+}
+li.drop{
+	display: inline-block;
+}
+.dropcont{
+	display: none;
+	position: absolute;
+	background-color: #cecece;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropcont a{
+	color: #000000;
+	padding: 12px;
+	padding-right: 1000px;
+	text-align: right;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropcont a:hover {
+	background-color: #00c1d4;
+}
+.drop:hover .dropcont{
+	display: block;
+}
+/* dsiplay flex */
+.ped, .psi{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+.ped > article{
+	margin: 25px;
+}
+.psi > article{
+	margin: 25px;
+}
+.border{
+	border-radius: 10px;
+	box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+	padding: 10px;
+}
+img:not(.logo){
+	border-radius: 10px;
+}
+.border a {
+	text-decoration: none;
+	color: white;
+	background-color: #1B365D;
+	padding: 10px;
+	border-radius: 10px;
+}
+.nome{
+	text-align: center;
+}
